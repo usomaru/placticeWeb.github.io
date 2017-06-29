@@ -39,7 +39,17 @@
     <li>各医療保険者を通じて保険料を徴収</li>
     <li>全国ベースで第2号被保険者一人あたりの保険料額を計算し、これを各医療保険者が被保険者数に応じて納付</li>
   </ul>
-  <p>できれば棒グラフはさむ</p>
+  
+<div style="display:flex; align-items:center; justify-content:space-around; padding:5px">
+<wj-flex-pie style="width:300px;" [itemsSource]="piesData" [binding]="'time'" [bindingName]="'name'">
+          <wj-flex-chart-animation [animationMode]="'Point'" [duration]="400"></wj-flex-chart-animation>
+          <wj-flex-chart-legend [position]="'None'"></wj-flex-chart-legend>
+          <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
+          </wj-flex-pie-data-label>
+        </wj-flex-pie>
+        <wj-flex-grid style="width:500px;" [itemsSource]="piesData" [headersVisibility]="'Column'"></wj-flex-grid>
+</div>
+
   <p>要介護認定制度について</p>
   <ul>
     <li>要介護認定（要支援認定を含む)は、介護の必要量を全国一律の基準に基づき、<br/>
@@ -50,7 +60,21 @@
     <li>二次判定・・・ 保健・医療・福祉の学識経験者により構成される介護認定審査会により、一次判定結果、主治医意見書等に基づき審査判定を行う</li>
   </ol>
   <p>・経費用等における提供サービスの内訳</p>
-  <p>グラフ使って表示</p>
+ <div style="display:flex; align-items:center; justify-content:space-around; padding:5px">
+  <wj-flex-pie style="width:300px;" [itemsSource]="pieData" [binding]="'money'" [bindingName]="'name'">
+          <wj-flex-chart-animation [animationMode]="'Point'" [duration]="400"></wj-flex-chart-animation>
+          <wj-flex-chart-legend [position]="'None'"></wj-flex-chart-legend>
+          <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
+          </wj-flex-pie-data-label>
+        </wj-flex-pie>
+  <wj-flex-grid style="width:500px;" [itemsSource]="pieData" [headersVisibility]="'Column'"></wj-flex-grid>
+ </div>
+        <wj-flex-pie style="width:300px;" [itemsSource]="pieallData" [binding]="'money'" [bindingName]="'name'">
+          <wj-flex-chart-animation [animationMode]="'Point'" [duration]="400"></wj-flex-chart-animation>
+          <wj-flex-chart-legend [position]="'None'"></wj-flex-chart-legend>
+          <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
+          </wj-flex-pie-data-label>
+        </wj-flex-pie>
  <!-- <a routerLink="./Service" routerLinkActive="active">サービス一覧へ</a>-->
 
 </article>

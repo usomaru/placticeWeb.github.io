@@ -26,6 +26,7 @@
     "jquery": "^3.2.1",
     "ng2-bootstrap": "^1.6.3",
     "rxjs": "^5.1.0",
+    "wijmo": "http://prerelease.componentone.com/wijmo5/npm-images/C1Wijmo-Enterprise-Eval-AMD-5.20171.300.tgz",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

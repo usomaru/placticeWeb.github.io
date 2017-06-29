@@ -11,4 +11,61 @@ import { ServiceComponent} from './service.component';
 export class MaintopComponent {
   title = '～公的介護保険制度の現状と今後の役割～';
 
+piesData: any = [
+    {
+      "time": 25,
+      "count": 2.3,
+      "name": "国",
+    },
+    {
+      "time": 12.5,
+      "count": 1.4,
+      "name": "都道府県負担金",
+    },
+    {
+      "time": 12.5,
+      "count": 1.2,
+      "name": "市町村負担金",
+    },
+    {
+      "time": 28,
+      "count": 2.7,
+      "name": "第2号被保険者の保険料",
+    },
+     {
+      "time": 22,
+      "count": 2.1,
+      "name": "第1号被保険者の保険料",
+    },
+  ];
+
+  pieData: any = [
+    {
+      "name":"居宅サービス",
+      "money":255.9
+    },
+    {
+      "name": "地域密着型サービス",
+      "money":34
+    },
+    {
+      "name":"施設サービス",
+      "money":89.5
+    }
+  ];
+
+  pieallData: any = [
+    {
+      "name":"居宅サービス",
+      "money":3173
+    },
+    {
+      "name": "地域密着型サービス",
+      "money":794
+    },
+    {
+      "name":"施設サービス",
+      "money":2880
+    }
+  ]
 }
