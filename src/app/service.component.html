@@ -1,0 +1,145 @@
+<h1>{{title}}</h1>
+
+<article>
+<h2>自宅で利用</h2>
+  <ul>
+    
+    <li><a (click)="staticModal.show()">訪問介護(ホームヘルプ)</a>：<span style="border-bottom:solid 2px red;">ヘルパー</span>
+    が利用者の居宅を訪問して介護</li>
+    <br/>
+    <!--1項目につき1イラスト挿入-->
+    <li><a (click)="huroModal.show()">訪問入浴介護</a>:自宅の浴槽での入浴が困難な方向け</li>
+    <li><a (click)="kangoModal.show()">訪問介護</a>：<span style="border-bottom:solid 2px red;">看護師等</span>
+    が利用者の住宅を訪問し、診療する</li>
+    <br/>
+    <li>訪問リハビリテーション：理学療法士や作業療法士等が利用者の居宅を訪問してリハビリ</li>
+    <li>夜間対応型訪問介護:夜間に定期的巡回・利用者の求めに応じた随時の訪問・
+      利用者の通報に応じたオペレーションサービス</li>
+      <li>定例巡回・随時対応型訪問介護看護:日中・夜間を通じて、定期巡回と随時の対応</li>
+      <li>介護小規模多機能型居宅介護(旧 複合型サービス):小規模多機能型住宅介護(通い・宿泊・訪問)
+        と訪問看護の組み合わせ</li>
+      <li>居宅療養管理指導:通院が困難な利用者へ医師等が家庭を訪問し、療養上の管理や指導、助言等を行う</li>
+  </ul>
+
+  <h2>自宅から通って利用</h2>
+  <ul>
+    <li>通所介護(デイサービス):施設に日帰りで行って介護をしてもらうようなとこ</li>
+    <li>地域密着型通所介護(小規模デイサービス)：通所介護と同じようなもの。地域に密着</li>
+    <li>認知症対応型通所介護:認知症の人に対するデイサービス</li>
+    <li>短期入所療養介護(ショートステイ)：介護老人保健施設などに短期間入所してもらい、
+      支援を行うサービス。家族の負担軽減。
+    </li>
+    <li>通所リハビリテーション(デイケア)：介護老人保健施設などで日帰りでリハビリ</li>
+    <li>小規模多機能居宅介護:通いによるサービス中心。希望に応じて訪問や宿泊を組み合わせ。
+      介護全般</li>
+      <li>短期入所生活介護(ショートステイ)：特別養護老人ホームなどに短期間入所してもらい、
+        介護するサービス</li>
+  </ul>
+
+  <h2>生活環境を整える</h2>
+  <ul>
+    <li>福祉用具貸与：福祉用具をレンタルにするサービス(車いすとか手すりとかとか)</li>
+    <li>特定福祉用具販売：福祉用具を販売するサービス(腰掛便座とか入浴補助用具とかとか)</li>
+ 　 <li>住宅改修:自宅の改修を行うサービス(手すりの取り付け・段差の解消とかとか)</li> 
+  </ul>
+
+  <h2>生活の場を自宅から移して利用</h2>
+  <ul>
+    <li>介護老人福祉施設(特別養護老人ホーム)：寝たきりや認知症などで、常に介護が必要かつ
+      自宅での生活が厳しい方のための施設(基本的に要介護3以上)
+    </li>
+    <li>地域密着型介護老人福祉施設入所者生活介護：定員が29人以下の特別養護老人ホーム</li>
+    <li>介護老人保健施設：リハビリなどで自立を支援し、家庭への復帰を目指すための施設。
+      リハビリに加えて、介護もしてくれる。
+    </li>
+    <li>介護療養型医療施設：症状は安定しているが、慢性疾患を有し、長期の療養が必要な人のための施設。
+      リハビリとか介護してくれる。
+    </li>
+    <li>特定施設入居者生活介護：有料老人ホームなどにおける入居者の日常生活を支えるサービス。
+      介護とかリハビリ。
+    </li>
+    <li>地域密着型特定施設入居者生活介護：老人ホームの小規模版(29人以下)</li>
+    <li>認知症対応型共同生活介護(認知症高齢者部グループホーム)：認知症の高齢者たちが共同で生活。
+      その中で必要な介護とかリハビリを行う。</li>
+  </ul>
+
+  <h2>介護予防のためのサービス(要支援の人たち向け)</h2>
+  <ul>
+    <li>介護予防訪問介護(ホームヘルプ)：訪問介護員が利用者の居宅を訪問して、
+      食事や家事等の介護を行うサービス</li>
+    <li>介護予防訪問入浴介護：自宅の入浴が困難な方へのサービス</li>
+    <li>介護予防訪問看護：看護師等が利用者の居宅を訪問し、
+      健康チェックとか自宅療養生活を支えるサービス
+    </li>
+    <li>介護予防訪問リハビリテーション：利用者の自宅でリハビリを行うサービス
+    </li>
+    <li>介護予防居宅療養管理指導：通院が困難な利用者へ医師等が家庭を訪問し、
+      療養上の管理や指導、助言等を行うサービス
+    </li>
+    <li>介護予防認知症対応型通所介護：軽度の認知症の人に対するデイサービス(日帰りサービス)</li>
+    <li>介護予防通所リハビリテーション(デイケア)：介護老人保健施設などで日帰りでリハビリを
+      行うサービス</li>
+      <li>介護予防短期入所生活介護(ショートステイ)：特別養護老人ホームなどに短期間入所してもらい、
+        介護を行うサービス。家族の負担軽減。</li>
+      <li>介護予防福祉用具貸与：日常生活や介護に役立つ福祉用具をレンタル(車いすとか)</li>
+      <li>特定介護予防福祉用具販売：日常生活や介護に役立つ福祉用具を販売(便座とか浴槽とか)</li>
+      <li>介護予防住宅改修：住宅の改修を行うサービス(手すりとかスロープとかの設置とか)</li>
+      <li>介護予防小規模多機能型居宅介護：通いを中心に訪問や宿泊を組み合わせたサービス</li>
+      <li>介護予防特定施設入居者生活介護：有料老人ホームなどが、利用者に介護とか日常生活上の支援を行う</li>
+      <li>介護予防認知症対応型共同生活介護：認知症の高齢者が共同生活する住居においてその世話とかリハビリ支援</li>
+  </ul>
+
+
+ 
+<div class="modal fade" bsModal #huroModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">訪問入浴介護</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="huroModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="huro">
+        <p style="margin-top: 400px;">自宅にヘルパーが来て入浴をお手伝い</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">訪問介護</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="kaigo">
+        <p style="margin-top: 400px;">ホームヘルプ：ヘルパー が利用者の居宅を訪問して介護</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #kangoModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">訪問介護</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="kangoModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="kango">
+        <p style="margin-top: 400px;">看護師が利用者の居宅を訪問して介護</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</article>

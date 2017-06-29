@@ -1,0 +1,23 @@
+
+<nav class="navbar fixed-top navbar bg-faded" style="background-color: pink;">
+<div class="gotmother" style="margin-left: 0px;"><h1 style="margin-left:50px;">介護・障害福祉</h1></div>
+    <div class="gotfahter" style="margin-left: -110px;"><p style="color:pink;">aaaaaaaaaaa</p></div>
+<ul class="nav justify-content-end" style="margin-right: 100px;">
+  <li class="nav-item">
+    <div class="Home"><a class="nav-link active" [routerLink]="['/Service']">&nbsp;&nbsp;サービス</a></div>
+  </li>
+  <li class="nav-item">
+    <div class="Redmine"><a class="nav-link active" [routerLink]="['/Maintop']">Top</a></div>
+  </li>
+   <li class="nav-item">
+    <div><a class="nav-link active" [routerLink]="['/Memo']">memo・用語</a></div>
+  </li>
+  <li class="nav-item">
+    <div><a class="nav-link active" [routerLink]="['/Asunaro']">障害福祉サービス</a></div>
+  </li>
+</ul>
+</nav>
+
+<article>
+  <router-outlet></router-outlet>
+</article>
