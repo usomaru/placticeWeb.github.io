@@ -47,8 +47,16 @@
           <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
           </wj-flex-pie-data-label>
         </wj-flex-pie>
-        <wj-flex-grid style="width:500px;" [itemsSource]="piesData" [headersVisibility]="'Column'"></wj-flex-grid>
+        <wj-flex-grid style="width:500px;" [itemsSource]="piesData" [headersVisibility]="'Column'">
+            <wj-flex-grid-column [header]="'保険料負担者'" [binding]="'name'" [width]="198" align="center">
+  </wj-flex-grid-column>
+   <wj-flex-grid-column [header]="'負担比率(％)'" [binding]="'time'" [width]="150" align="center">
+  </wj-flex-grid-column>
+  <wj-flex-grid-column [header]="'負担額(兆)'" [binding]="'count'" [width]="150" align="center">
+  </wj-flex-grid-column>
+        </wj-flex-grid>
 </div>
+
 
   <p>要介護認定制度について</p>
   <ul>
@@ -67,14 +75,30 @@
           <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
           </wj-flex-pie-data-label>
         </wj-flex-pie>
-  <wj-flex-grid style="width:500px;" [itemsSource]="pieData" [headersVisibility]="'Column'"></wj-flex-grid>
+  <wj-flex-grid style="width:500px;" [itemsSource]="pieData" [headersVisibility]="'Column'">
+  <wj-flex-grid-column [header]="'サービス名'" [binding]="'name'" [width]="198" align="center">
+  </wj-flex-grid-column>
+   <wj-flex-grid-column [header]="'利用者数(万人)'" [binding]="'money'" [width]="150" align="center">
+  </wj-flex-grid-column>
+  <wj-flex-grid-column [header]="'比率(％)'" [binding]="'hiritu'" [width]="150" align="center">
+  </wj-flex-grid-column>
+  </wj-flex-grid>
  </div>
+  <div style="display:flex; align-items:center; justify-content:space-around; padding:5px">
         <wj-flex-pie style="width:300px;" [itemsSource]="pieallData" [binding]="'money'" [bindingName]="'name'">
           <wj-flex-chart-animation [animationMode]="'Point'" [duration]="400"></wj-flex-chart-animation>
           <wj-flex-chart-legend [position]="'None'"></wj-flex-chart-legend>
           <wj-flex-pie-data-label class="piename" [content]="'{name}'" [position]="'Inside'">
           </wj-flex-pie-data-label>
         </wj-flex-pie>
+          <wj-flex-grid style="width:500px;" [itemsSource]="pieallData" [headersVisibility]="'Column'">
+  <wj-flex-grid-column [header]="'サービス名'" [binding]="'name'" [width]="198" align="center">
+  </wj-flex-grid-column>
+   <wj-flex-grid-column [header]="'費用(億円)'" [binding]="'money'" [width]="150" align="center">
+  </wj-flex-grid-column>
+  <wj-flex-grid-column [header]="'比率(％)'" [binding]="'hiritu'" [width]="150" align="center">
+  </wj-flex-grid-column>
+  </wj-flex-grid>
  <!-- <a routerLink="./Service" routerLinkActive="active">サービス一覧へ</a>-->
-
+  </div>
 </article>

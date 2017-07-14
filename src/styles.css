@@ -28,3 +28,8 @@ article{
 #kango{
     background: url("kango.png") no-repeat center;
 }
+
+.wj-flexchart{
+   border:none;
+   background-color:#f9f9f9;
+}

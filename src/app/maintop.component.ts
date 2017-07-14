@@ -42,30 +42,36 @@ piesData: any = [
   pieData: any = [
     {
       "name":"居宅サービス",
-      "money":255.9
+      "money":255.9,
+      "hiritu":67
     },
     {
       "name": "地域密着型サービス",
-      "money":34
+      "money":34,
+      "hiritu":9,
     },
     {
       "name":"施設サービス",
-      "money":89.5
+      "money":89.5,
+      "hiritu":24
     }
   ];
 
   pieallData: any = [
     {
       "name":"居宅サービス",
-      "money":3173
+      "money":3173,
+      "hiritu":46
     },
     {
       "name": "地域密着型サービス",
-      "money":794
+      "money":794,
+      "hiritu":12
     },
     {
       "name":"施設サービス",
-      "money":2880
+      "money":2880,
+      "hiritu":42
     }
   ]
 }
